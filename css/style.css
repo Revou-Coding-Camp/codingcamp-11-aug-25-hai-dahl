@@ -4,9 +4,13 @@
     background-position: center;
 }
 .header-color {
-    background-color: rgb(233 244 255);
+    background-color: rgb(157, 187, 191);
 }   
 
 .bg-gray-200 {
     background-color: aliceblue;
+}   
+.brnav-color {
+    border-color: rgb(145, 173, 177);
+    background-color: rgb(233, 244, 245);
 }   

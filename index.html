@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N.flying</title>
+    <title>N.flying Fanpage</title>
 
     <!--CSS External Link-->
     <link rel="stylesheet" href="css/style.css">
@@ -15,16 +15,16 @@
 <body>
 
     <!--Main Header-->
-    <header class="flex items-center justify-between p-4 bg-gray-100 border-b border-gray-300 header-color">
+    <header class="flex items-center h-[70px] justify-between p-4 bg-gray-100 shadow-b header-color">
         <!-- Logo Icon -->
-        <div class="bg-gray-500 rounded-[20px] h-[50px] w-[75px] main-logo"></div>
+        <div class="bg-gray-500 rounded-[20px] h-[70px] w-[130px] main-logo"></div>
 
         <nav>
             <ul class="flex gap-[6px]">
-                <li><a href="#" class="text-blue-500 border py-[2px] px-[5px] rounded-[5px]">Home</a></li>
-                <li><a href="#" class="text-blue-500 border py-[2px] px-[5px] rounded-[5px]">About</a></li>
-                <li><a href="#" class="text-blue-500 border py-[2px] px-[5px] rounded-[5px]">Our Profile</a></li>
-                <li><a href="#" class="text-blue-500 border py-[2px] px-[5px] rounded-[5px]">Message Us</a></li>
+                <li><a href="#home-page" class="text-grey-500 border py-[3px] px-[5px] rounded-[5px] brnav-color">Home</a></li>
+                <li><a href="#about-page" class="text-grey-500 border py-[3px] px-[5px] rounded-[5px] brnav-color">About</a></li>
+                <li><a href="#profile-page" class="text-grey-500 border py-[3px] px-[5px] rounded-[5px] brnav-color">Profile</a></li>
+                <li><a href="#question-page" class="text-grey-500 border py-[3px] px-[5px] rounded-[5px] brnav-color">Question</a></li>
             </ul>
         </nav>
     </header>
@@ -32,29 +32,48 @@
     <!--Main Content-->
     <main>
         <!--Home-->
-        <section class="h-[400px] bg-gray-200">  
+        <section id="home-page" class="h-[400px] bg-gray-200">  
             <div class="flex items-center justify-center h-full">
-                <h1 class="text-4xl font-bold text-gray-800">Welcome to N.flying</h1></div>
+                <h1 class="text-4xl font-bold text-gray-800">Welcome <span id="user-greeting"></span> to N.Flying Fanpage</h1></div>
         </section>
 
         <hr />
 
-        <!--About Us-->
-        <section class="h-[400px] bg-gray-200"></section>
+        <!--About N.Flying-->
+        <section id="about-page" class="h-[400px] bg-gray-200">
+            <h1 class="text-4xl font-bold text-gray-800">About N.Flying</h1>
+            <div class="mt-4">
+                <p class="text-lg text-gray-700">N.Flying is a South Korean rock band formed by FNC Entertainment. They debuted in 2013 and have since gained a strong following for their energetic performances and catchy music.</p>
+            </div>
+        </section>
 
         <hr />
 
-        <!--Our Profile-->
-        <section class="h-[400px] bg-gray-200"></section>
+        <!--Profile-->
+        <section id="profile-page" class="h-[400px] bg-gray-200">
+            <h1 class="text-4xl font-bold text-gray-800">Get To Known N.Flying</h1>
+            <div class="mt-4">
+                <p class="text-lg text-gray-700">N.Flying consists of talented members who contribute to the band's unique sound. Each member brings their own style and personality, making N.Flying a diverse and dynamic group.</p>
+            </div>
+        </section>
 
         <hr />
 
-        <!--Message Us-->
-        <section class="h-[400px] bg-gray-200"></section>
+        <!--Question-->
+        <section id="question-page" class="h-[400px] bg-gray-200">
+            <h1 class="text-4xl font-bold text-gray-800">Ask N.Flying</h1>
+                <p class="text-lg text-gray-700">If you have any questions about N.Flying, feel free to reach out!</p>
+
+            <form>
+                <label for="question" class="block text-gray-700 mt-4">Your Question:</label>
+                <input id="question" type="text" class="mt-2 p-2 border rounded w-full"></input>
+                <button type="button" onclick="sendQuestion();" class="mt-2 bg-blue-500 text-white py-2 px-4 rounded">Send</button>
+            </form>
+        </section>
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer> <span class="flex item-center justify-center text-gray-500">© 2025 N.Flying Fanpage. All rights reserved.</span>
     </footer>
     
     <!--JavaScript External Link-->
